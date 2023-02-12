@@ -1,0 +1,128 @@
+.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
+
+.containerHeader{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    
+    .logo{
+        font-size: 2.5rem;
+        align-self: flex-start;
+
+        .linkLogo{
+          text-decoration: none;
+          color: white;
+      }
+    }
+
+    .navMenu{
+        display: flex;
+        gap: 1rem;
+
+        button{
+            height: fit-content;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+
+        .btnCloseMenu{
+            animation-name: upTodown;
+            animation-duration: 1s;
+        }
+
+        .ulMenu{
+            list-style-type: none;
+            gap: 0.3rem;
+            animation-name: upTodown;
+            animation-duration: 1s;
+            
+            @keyframes upTodown {
+                0% {
+                  transform: translateY(-100px);
+                }
+                100% {
+                  transform: translateX(0);
+                  
+                }
+              }
+
+            .liLink{
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .containerHeader{
+        padding: 2rem 0;
+        
+        .logo{
+            font-size: 2.5rem;
+        }
+
+        .navMenu{
+            display: flex;
+    
+            button{
+                display: none;
+            }
+    
+            .ulMenu{
+                display: flex;
+                gap: 2rem;
+                list-style-type: none;
+                animation-name: none;
+                
+                .liLink{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .containerHeader{
+        padding: 2rem 0;
+
+        .logo{
+            font-size: 2.8rem;
+        }
+
+        .navMenu{
+            display: flex;
+    
+            button{
+                display: none;
+            }
+    
+            .ulMenu{
+                display: flex;
+                gap: 2.5rem;
+                list-style-type: none;
+                animation-name: none;
+                
+                .liLink{
+                    font-size: 1.35rem;
+                }
+            }
+        }
+    }
+}

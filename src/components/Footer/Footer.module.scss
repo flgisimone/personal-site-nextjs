@@ -1,0 +1,80 @@
+
+.containerFooter{
+    margin: auto;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+
+    .contact{
+        display: flex;
+        gap: 0.3rem;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        h2{
+            font-weight: 500;
+        }
+
+        a{
+            display: flex;
+            gap: 1.3rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            align-items: center;
+
+            .fa-envelope{
+                font-size: 2rem;
+                display: flex;
+            }
+        }
+    }
+        
+    .social{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+
+        span{
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+
+    .author{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        gap: 0.25rem;
+        font-size: .9rem;
+
+        .codeDev{
+            color: white;
+        }
+    }
+}
+
+.backMenu{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-50%, -5%);
+    font-size: 1.8rem;
+    color: white;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
+    @-webkit-keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+    @keyframes mover {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+    }
+}
