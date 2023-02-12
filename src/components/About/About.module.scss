@@ -1,0 +1,408 @@
+.containerAbout{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        color: white;
+        font-size: 1.7rem;
+        padding-top: 2.5rem;
+        font-weight: 500;       
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoAbout{
+        color: white;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        background: #1b1b1b;
+        backdrop-filter: blur( 0.15rem );
+        -webkit-backdrop-filter: blur( 0.15rem );
+        border-radius: 0.35rem;
+        border: 0.15rem solid white;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    
+        .colorFont{
+            font-weight: bold;
+            color: orange;
+        }
+
+        hr{
+            border: 0.4rem dotted orange;
+            border-style: none none dotted; 
+        }
+
+        .ulImgStack{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            img{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        .containerLanguage{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .containerBtnLanguage{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span{
+                    font-size: 1.2rem;
+                    display: flex;
+                    gap:0.4rem;
+
+                    .iconGithub{
+                        width: 1.5rem;
+                        background-color: orange;
+                        border-radius: 50%;
+                    }
+                }
+    
+                button{
+                    background-color: transparent;
+                    color: white;
+                    border: none;
+                    font-size: 1.8rem;
+                }
+
+            }
+
+            .containerGithub{
+                gap: .5rem;
+            }
+            
+            .statsGithub{
+                font-size: 1.1rem;
+                
+                a{
+                    color: orange;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .containerLinkPortfolio{
+        align-self: center;
+        border: 0.15rem solid white;
+        border-radius: 0.35rem;
+        padding: 0.55rem;
+        display: flex;
+        align-items: center;
+        background: #1b1b1b;
+        gap: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+
+    .containerAbout{
+        gap: 1rem;
+
+        .infoAbout{
+            .ulImgStack{
+                justify-content: center;
+            }
+        }
+
+
+        h2{
+            text-align: center;
+        }
+    }
+  
+    .containerLanguage{
+        .containerGithub{
+            gap: 1rem;
+            
+            .imgLanguage{
+                width: 100%;
+            }
+        
+            .imgActivity{
+                width: 100%;
+            }
+        
+            .imgTrophies{
+                width: 100%;
+            }
+        }
+      
+        .statsGithub{
+            display: flex;
+            align-self: center;
+            flex-direction: row;
+            gap: 1rem;
+            margin-top: 1rem; 
+        }
+    }
+
+    .containerLinkPortfolio{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    
+    .containerAbout{
+        gap: 1rem;
+        padding: 1rem 0;
+
+        h2{
+            padding-top: 0rem;
+            text-align: center;
+        }
+    }
+  
+    .containerLanguage{
+      .containerGithub{
+        gap: 1rem;
+
+        .imgLanguage{
+            width: 100%;
+        }
+
+        .imgActivity{
+            width: 100%;
+        }
+
+        .imgTrophies{
+        width: 100%;
+        }
+      }
+      
+      .statsGithub{
+        font-size: 1.2rem;
+        }
+    }
+
+    .containerLinkPortfolio{
+        font-size: 1rem;
+    }
+  
+  }
+
+@media screen and (min-width: 768px) {
+
+.containerAbout{
+    gap: 1rem;
+    padding: 0;
+
+    h2{
+        padding-top: 0.75rem;
+    }
+    
+    .infoAbout{
+        .containerLanguage{
+            .containerBtnLanguage{
+                button{
+                    display: none;
+                }
+            }
+            .containerGithub{
+                display: flex;
+                padding: 0rem;
+                margin: auto;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                    .imgLanguage{
+                        width: 49%;
+                    }
+                
+                    .imgActivity{
+                        width: 49%;
+                    }
+                }
+
+                .statsGithub{
+                    display: flex;
+                    align-self: center;
+                    flex-direction: row;
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+}
+
+  @media screen and (min-width: 1024px) {
+    
+    .containerAbout{
+        
+        h2{
+            padding-top: 0.5rem;
+        }
+
+        .infoAbout{
+            gap: .5rem;
+
+            .containerLanguage{
+                .containerBtnLanguage{
+                    button{
+                        display: none;
+                    }
+                }
+        
+                .containerGithub{
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0;
+        
+                    .imgLanguage{
+                        width: 45%;
+                    }
+            
+                    .imgActivity{
+                      width: 46%;
+                    }
+        
+                    .imgTrophies{
+                        width: 92.5%;
+                    }
+                }
+        
+                .statsGithub{
+                    display: flex;
+                    align-self: center;
+                    flex-direction: row;
+                    gap: .5rem;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            .ulImgStack{
+                img{
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+    @media screen and (min-width: 1200px) {
+
+        .containerAbout{
+            gap: 1rem;
+
+            h2{
+                text-align: center;
+            }
+
+            .infoAbout{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
+
+                .containerLanguage{
+
+                    .containerGithub{
+                        display: flex;
+
+                        .imgLanguage{
+                            width: 49%;
+                        }
+              
+                        .imgActivity{
+                            width: 49%;
+                        }
+
+                        .imgTrophies{
+                            width: 100%;
+                        }
+                    }
+
+                    .containerBtnLanguage{
+                        display: none;
+                    }
+
+                    .statsGithub{
+                        display: flex;
+                        align-self: center;
+                        flex-direction: row;
+                        gap: .5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1500px) {
+
+        .containerHero{
+            padding: 14rem 0;
+        }
+    
+        .containerAbout{
+            .infoAbout{
+                gap: 2rem;
+
+                .ulImgStack{
+                    list-style-type: none;
+                    display: flex;
+                    
+                    align-items: center;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+        
+                    img{
+                        width: 3rem;
+                        height: 3rem;
+                    }
+                }
+
+                .containerLanguage{
+                    .containerGithub{
+                        padding: 0;
+                        flex-wrap: wrap;
+                    }
+    
+                    .statsGithub{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: .8rem;
+                    }
+                }
+            }
+            
+            .containerLinkPortfolio{
+                display: none;
+            }
+        }
+        
+    }

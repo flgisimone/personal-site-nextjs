@@ -1,0 +1,14 @@
+.Social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    a{
+        color: white;
+        font-size: 1.9rem;
+        padding-bottom: 0.2rem;
+        border-bottom: 0.1rem solid #808080;
+        text-decoration: none;
+    }
+}
