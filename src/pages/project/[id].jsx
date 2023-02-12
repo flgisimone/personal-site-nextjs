@@ -34,11 +34,13 @@ export default function Project(){
                 <div className={styles.Description}>
                     <h1>{data.name}</h1>
                     <p>{data.overview}</p>
+                    <h3 className={styles.code}>Linguaggi: {data.code}</h3>
                     <span>Responsive: {data.device}</span>
                     <div className={styles.containerLink}>
                         <Link href={`${data.repository}`}><BsGithub /> Repository</Link>
                         <Link href={`${data.site}`}><BiLinkExternal /> Sito</Link>
                     </div>
+                    <h5>{data.credentials}</h5>
                 </div>
             </div>
             <iframe src={data.site} frameborder="0" className={styles.interactionSites}></iframe>
