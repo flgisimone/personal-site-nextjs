@@ -37,8 +37,8 @@ export default function Project(){
                     <h3 className={styles.code}>Linguaggi: {data.code}</h3>
                     <span>Responsive: {data.device}</span>
                     <div className={styles.containerLink}>
-                        <Link href={`${data.repository}`}><BsGithub /> Repository</Link>
-                        <Link href={`${data.site}`}><BiLinkExternal /> Sito</Link>
+                        <Link href={`${data.repository}`} target="_blank"><BsGithub /> Repository</Link>
+                        <Link href={`${data.site}`} target="_blank"><BiLinkExternal /> Sito</Link>
                     </div>
                     <h5>{data.credentials}</h5>
                 </div>
