@@ -15,7 +15,7 @@ const Footer = () => {
     <div className={styles.containerFooter} id="contatti">
         <div className={styles.contact}>
             <h2>Contattami</h2>
-            <a href="mailto:florestagiuliosimone@gmail.com"><BsBoxArrowRight /><BsFillEnvelopeFill /></a>
+            <Link href={"mailto:florestagiuliosimone@gmail.com"}><BsBoxArrowRight /><BsFillEnvelopeFill /></Link>
         </div>
         <div className={styles.social}>
             <span>Seguimi</span>
