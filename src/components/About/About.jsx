@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Link from "next/link";
-import { IoIosAddCircle, IoIosCloseCircle, IoIosArrowDown } from 'react-icons/io';
+import { IoIosAddCircle, IoIosCloseCircle, IoIosArrowDown, IoLogoGithub} from 'react-icons/io';
 import styles from "./About.module.scss"
 
 const About = () => {
@@ -40,7 +40,7 @@ return (
                   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=flgisimone&layout=compact&theme=great-gatsby" alt="most language github stats" className={styles.imgLanguage}/>
                   <img src="https://github-readme-stats-sigma-five.vercel.app/api/?username=flgisimone&theme=great-gatsby" alt="activity github stats" className={styles.imgActivity}/>
                   <img src="https://github-profile-trophy.vercel.app/?username=flgisimone&theme=great-gatsby&margin-w=4" alt="trophies github stats" className={styles.imgTrophies}/>
-                  <span className={`${openLanguage ? `${styles.statsGithub} ${styles.hidden}` : `${styles.statsGithub} ${styles.show}`}`}>Stats by <Link href={"https://github.com/flgisimone"}>Github</Link></span>
+                  <span className={`${openLanguage ? `${styles.statsGithub} ${styles.hidden}` : `${styles.statsGithub} ${styles.show}`}`}><Link href={"https://github.com/flgisimone"}><IoLogoGithub className={styles.iconGithub}/> Github Stats</Link></span>
               </div>
           </div>
       </div>

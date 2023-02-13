@@ -35,6 +35,7 @@ const Portfolio = () => {
                   data.filter(item => item.id === indexProject).map((item) =>
                   <>
                   <div className={styles.cardProject} key={item.id}>
+                  <Link href={`/project/${item.id}`}><span>{item.name}</span></Link>
                     <div className={styles.imgContainerProject}>
                         <span className={styles.loader}></span>
                         <Link href={`/project/${item.id}`}>
@@ -52,14 +53,14 @@ const Portfolio = () => {
                         <RxDoubleArrowLeft />
                       </button>
                       
-                      <Link href={`/project/${item.id}`}><span>{item.name}</span></Link>
+                      <Link href={`/project/${item.id}`} className={styles.discover}>Scopri di più</Link>    
                       
                       <button className={`${indexProject == data.length ? `${styles.hidden}` : `${styles.btnProjectNext}`}`}
                         onClick={btnProjectNext}>
                         <RxDoubleArrowRight />
                       </button>
                     </div>
-                    <Link href={`/project/${item.id}`} className={styles.discover}>Scopri di più</Link>    
+
                   </div>
                   </>
                   ) 
