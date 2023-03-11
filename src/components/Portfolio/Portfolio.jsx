@@ -7,7 +7,7 @@ import  styles from "./Portfolio.module.scss"
 const Portfolio = () => {
  
   useEffect(() =>{
-    fetch("https://e6o21.wiremockapi.cloud/projects")
+    fetch("/api/project")
     .then(res => res.json())
     .then(res => setData(res))
   }, [])
