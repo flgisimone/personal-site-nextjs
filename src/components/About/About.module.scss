@@ -335,16 +335,17 @@
                 margin: auto;
 
                 .containerLanguage{
-
                     .containerGithub{
                         display: flex;
+                        justify-content: space-between;
+                        gap: 1rem;
 
                         .imgLanguage{
-                            width: 49%;
+                            width: 44.5%;
                         }
               
                         .imgActivity{
-                            width: 49%;
+                            width: 53%;
                         }
 
                         .imgTrophies{
@@ -358,9 +359,11 @@
 
                     .statsGithub{
                         display: flex;
+                        justify-content: center;
                         align-self: center;
                         flex-direction: row;
                         gap: .5rem;
+                        margin: auto;
                     }
                 }
             }
